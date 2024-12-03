@@ -3,4 +3,3 @@ pub type Output {
   IntOutput(value: Int)
   NotImplemented
 }
-

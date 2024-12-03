@@ -1,7 +1,7 @@
-import gleam/option.{ None, Some }
 import gleam/dict
 import gleam/int
 import gleam/list
+import gleam/option.{None, Some}
 import gleam/result
 import gleam/string
 import util/files
@@ -42,8 +42,9 @@ pub fn part_two(input: String) -> problems.Output {
 }
 
 fn parse_input(input: String) -> HistorianList {
-  let lines = files.lines(input)
-  |> list.filter(fn(line) { !string.is_empty(line) })
+  let lines =
+    files.lines(input)
+    |> list.filter(fn(line) { !string.is_empty(line) })
 
   use #(left, right), line <- list.fold(over: lines, from: #([], []))
 
@@ -52,7 +53,6 @@ fn parse_input(input: String) -> HistorianList {
   let assert Ok(b) = int.parse(b)
   #([a, ..left], [b, ..right])
 }
-
 // --- Day 1: Historian Hysteria ---
 // The Chief Historian is always present for the big Christmas sleigh launch, but nobody has seen him in months! Last anyone heard, he was visiting locations that are historically significant to the North Pole; a group of Senior Historians has asked you to accompany them as they check the places they think he was most likely to visit.
 //
