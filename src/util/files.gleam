@@ -1,9 +1,8 @@
+import gleam/string
+import gleam/int
 import simplifile
 
-pub type Output {
-  StringOutput(value: String)
-  IntOutput(value: Int)
-}
+const input_files_path = "./resources/inputs/"
 
 pub fn get_file_content(path: String) -> String {
   case simplifile.read(from: path) {
@@ -14,3 +13,15 @@ pub fn get_file_content(path: String) -> String {
     }
   }
 }
+
+pub fn get_input_for_day(day: Int) -> String {
+  case day {
+    d if d > 0 && d < 25 -> get_file_content(input_files_path <> "day" <> int.to_string(day) <> ".txt")
+    _ -> panic as "Day must be in range 1-25"
+  }
+}
+
+pub fn lines(input: String) -> List(String) {
+  string.split(input, "\n")
+}
+
