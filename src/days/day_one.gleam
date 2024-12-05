@@ -1,7 +1,7 @@
+import gleam/option.{None, Some}
 import gleam/dict
 import gleam/int
 import gleam/list
-import gleam/option.{None, Some}
 import gleam/result
 import gleam/string
 import util/files
@@ -42,10 +42,7 @@ pub fn part_two(input: String) -> problems.Output {
 }
 
 fn parse_input(input: String) -> HistorianList {
-  let lines =
-    files.lines(input)
-    |> list.filter(fn(line) { !string.is_empty(line) })
-
+  let lines = files.lines(input)
   use #(left, right), line <- list.fold(over: lines, from: #([], []))
 
   let assert [a, b] = string.split(line, on: "   ")

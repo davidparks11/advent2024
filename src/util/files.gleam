@@ -1,5 +1,6 @@
 import gleam/int
 import gleam/string
+import gleam/list
 import simplifile
 
 const input_files_path = "./resources/inputs/"
@@ -27,4 +28,5 @@ pub fn get_input_for_day(day: Int) -> String {
 
 pub fn lines(input: String) -> List(String) {
   string.split(input, "\n")
+  |> list.filter(fn(line) { !string.is_empty(line) })
 }
