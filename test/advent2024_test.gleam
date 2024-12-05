@@ -1,3 +1,4 @@
+import days/day_two
 import util/problems
 import days/day_one
 import gleam/int
@@ -24,6 +25,16 @@ pub fn day_one_part_one_test() {
 pub fn day_one_part_two_test() {
   day_one.part_two(files.get_file_content(build_test_path_for_day(1)))
   |> should.equal(problems.IntOutput(31))
+}
+
+pub fn day_two_part_one_test() {
+  day_two.part_one(files.get_file_content(build_test_path_for_day(2)))
+  |> should.equal(problems.IntOutput(2))
+}
+
+pub fn day_two_part_two_test() {
+  day_two.part_two(files.get_file_content(build_test_path_for_day(2)))
+  |> should.equal(problems.NotImplemented)
 }
 
 fn build_test_path_for_day(day: Int) -> String {
