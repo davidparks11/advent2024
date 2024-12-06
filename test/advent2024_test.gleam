@@ -1,6 +1,7 @@
-import days/day_two
+import days/day2
 import util/problems
-import days/day_one
+import days/day1
+import days/day3
 import gleam/int
 import gleeunit
 import gleeunit/should
@@ -17,23 +18,33 @@ pub fn get_file_content_test() {
   |> should.equal("foo\n")
 }
 
-pub fn day_one_part_one_test() {
-  day_one.part_one(files.get_file_content(build_test_path_for_day(1)))
+pub fn day1_part_one_test() {
+  day1.part_one(files.get_file_content(build_test_path_for_day(1)))
   |> should.equal(problems.IntOutput(11))
 }
 
-pub fn day_one_part_two_test() {
-  day_one.part_two(files.get_file_content(build_test_path_for_day(1)))
+pub fn day1_part_two_test() {
+  day1.part_two(files.get_file_content(build_test_path_for_day(1)))
   |> should.equal(problems.IntOutput(31))
 }
 
-pub fn day_two_part_one_test() {
-  day_two.part_one(files.get_file_content(build_test_path_for_day(2)))
+pub fn day2_part_one_test() {
+  day2.part_one(files.get_file_content(build_test_path_for_day(2)))
   |> should.equal(problems.IntOutput(2))
 }
 
-pub fn day_two_part_two_test() {
-  day_two.part_two(files.get_file_content(build_test_path_for_day(2)))
+pub fn day2_part_two_test() {
+  day2.part_two(files.get_file_content(build_test_path_for_day(2)))
+  |> should.equal(problems.IntOutput(4))
+}
+
+pub fn day3_part_one_test() {
+  day3.part_one(files.get_file_content(build_test_path_for_day(2)))
+  |> should.equal(problems.IntOutput(2))
+}
+
+pub fn day3_part_two_test() {
+  day3.part_two(files.get_file_content(build_test_path_for_day(2)))
   |> should.equal(problems.IntOutput(4))
 }
 

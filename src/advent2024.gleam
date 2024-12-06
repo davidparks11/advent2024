@@ -1,15 +1,15 @@
-import days/day_one
+import days/day1
 import gleam/int
-import days/day_two
+import days/day2
 import gleam/io
 import util/files
 import util/problems.{IntOutput, StringOutput}
 
 pub fn main() {
-  io.println(solve(1, 1, day_one.part_one))
-  io.println(solve(1, 2, day_one.part_two))
-  io.println(solve(2, 1, day_two.part_one))
-  io.println(solve(2, 2, day_two.part_two))
+  io.println(solve(1, 1, day1.part_one))
+  io.println(solve(1, 2, day1.part_two))
+  io.println(solve(2, 1, day2.part_one))
+  io.println(solve(2, 2, day2.part_two))
 }
 
 fn solve(day: Int, part: Int, solution: fn(String) -> problems.Output) -> String {
