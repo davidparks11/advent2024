@@ -39,13 +39,13 @@ pub fn day2_part_two_test() {
 }
 
 pub fn day3_part_one_test() {
-  day3.part_one(files.get_file_content(build_test_path_for_day(2)))
-  |> should.equal(problems.IntOutput(2))
+  day3.part_one(files.get_file_content(build_test_path_for_day(3)))
+  |> should.equal(problems.IntOutput(161))
 }
 
 pub fn day3_part_two_test() {
-  day3.part_two(files.get_file_content(build_test_path_for_day(2)))
-  |> should.equal(problems.IntOutput(4))
+  day3.part_two(files.get_file_content(build_test_path_for_day(3)))
+  |> should.equal(problems.IntOutput(33))
 }
 
 fn build_test_path_for_day(day: Int) -> String {
