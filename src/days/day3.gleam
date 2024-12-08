@@ -34,7 +34,6 @@ pub fn part_two(input: String) -> problems.Output {
   |> list.map(fn(matches) { matches.submatches })
   |> list.flatten
   |> option.values
-  // |> io.debug
   |> execute_memory(True, 0)
   |> problems.IntOutput
 }
