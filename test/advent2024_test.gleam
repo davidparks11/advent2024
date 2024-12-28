@@ -3,6 +3,7 @@ import days/day1
 import days/day2
 import days/day3
 import days/day4
+import days/day5
 import gleam/int
 import gleeunit
 import gleeunit/should
@@ -57,6 +58,16 @@ pub fn day4_part_one_test() {
 pub fn day4_part_two_test() {
   day4.part_two(files.get_file_content(build_test_path_for_day(4)))
   |> should.equal(problems.IntOutput(9))
+}
+
+pub fn day5_part_one_test() {
+  day5.part_one(files.get_file_content(build_test_path_for_day(5)))
+  |> should.equal(problems.IntOutput(143))
+}
+
+pub fn day5_part_two_test() {
+  day5.part_two(files.get_file_content(build_test_path_for_day(5)))
+  |> should.equal(problems.IntOutput(123))
 }
 
 fn build_test_path_for_day(day: Int) -> String {

@@ -28,5 +28,11 @@ pub fn get_input_for_day(day: Int) -> String {
 
 pub fn lines(input: String) -> List(String) {
   string.split(input, "\n")
-  |> list.filter(fn(line) { !string.is_empty(line) })
+  |> remove_empty
 }
+
+pub fn remove_empty(input: List(String)) -> List(String) {
+  use line <- list.filter(input)
+  !string.is_empty(line)
+}
+

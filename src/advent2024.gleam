@@ -2,6 +2,7 @@ import days/day1
 import days/day2
 import days/day3
 import days/day4
+import days/day5
 import gleam/int
 import gleam/io
 import util/files
@@ -17,6 +18,8 @@ pub fn main() {
     day3.part_two,
     day4.part_one,
     day4.part_two,
+    day5.part_one,
+    day5.part_two,
   ])
 }
 
