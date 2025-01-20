@@ -35,4 +35,3 @@ pub fn remove_empty(input: List(String)) -> List(String) {
   use line <- list.filter(input)
   !string.is_empty(line)
 }
-
