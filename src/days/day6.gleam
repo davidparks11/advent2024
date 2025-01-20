@@ -1,12 +1,12 @@
-import util/problems.{type Output, IntOutput}
-import util/files
-import util/dict_helper
+import gleam/bool
 import gleam/dict.{type Dict}
 import gleam/list
-import gleam/string
-import gleam/set.{type Set}
 import gleam/result
-import gleam/bool
+import gleam/set.{type Set}
+import gleam/string
+import util/dict_helper
+import util/files
+import util/problems.{type Output, IntOutput}
 
 type Point =
   #(Int, Int)

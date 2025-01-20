@@ -1,4 +1,3 @@
-import util/problems
 import days/day1
 import days/day2
 import days/day3
@@ -9,6 +8,7 @@ import gleam/int
 import gleeunit
 import gleeunit/should
 import util/files
+import util/problems
 
 pub fn main() {
   gleeunit.main()

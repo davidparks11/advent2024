@@ -1,7 +1,7 @@
-import gleam/int
 import gleam/bool
-import gleam/result
+import gleam/int
 import gleam/list
+import gleam/result
 import gleam/string
 import util/files
 import util/problems

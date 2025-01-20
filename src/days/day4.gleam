@@ -1,8 +1,8 @@
-import util/problems.{IntOutput}
-import gleam/list
 import gleam/dict.{type Dict}
-import util/files
+import gleam/list
 import gleam/string
+import util/files
+import util/problems.{IntOutput}
 
 type Position {
   Position(x: Int, y: Int)

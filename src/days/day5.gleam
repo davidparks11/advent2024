@@ -1,14 +1,14 @@
-import util/problems
+import gleam/dict.{type Dict}
+import gleam/int
+import gleam/list.{Continue, Stop}
+import gleam/option.{None, Some}
+import gleam/order
+import gleam/result
+import gleam/set.{type Set}
+import gleam/string
 import util/files
 import util/func
-import gleam/dict.{type Dict}
-import gleam/set.{type Set}
-import gleam/list.{Continue, Stop}
-import gleam/string
-import gleam/int
-import gleam/option.{None, Some}
-import gleam/result
-import gleam/order
+import util/problems
 
 type Rules =
   Dict(Int, List(Int))

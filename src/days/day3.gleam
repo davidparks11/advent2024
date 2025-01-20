@@ -1,9 +1,9 @@
-import util/problems.{IntOutput}
-import util/files
-import gleam/regexp
-import gleam/list
 import gleam/int
+import gleam/list
 import gleam/option.{Some}
+import gleam/regexp
+import util/files
+import util/problems.{IntOutput}
 
 pub fn part_one(input: String) -> problems.Output {
   let assert Ok(re) = regexp.from_string("mul\\((\\d+),(\\d+)\\)")

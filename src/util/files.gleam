@@ -1,6 +1,6 @@
 import gleam/int
-import gleam/string
 import gleam/list
+import gleam/string
 import simplifile
 
 const input_files_path = "./resources/inputs/"
